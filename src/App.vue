@@ -46,6 +46,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less">
+  #app{
+    background-color: antiquewhite;
+    h1{
+      color: blue;
+    }
+  }
 </style>
