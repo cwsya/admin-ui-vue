@@ -5,8 +5,10 @@
     <h2>token: {{tokenVal}}</h2>
     用户名: <input type="text" v-model="userNameInp" />
     token: <input type="text" v-model="tokenValInp"/>
-    <button @click="upUserData">修改</button>
-
+    <el-button
+        type="primary"
+        @click="upUserData"
+    >修改</el-button>
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
