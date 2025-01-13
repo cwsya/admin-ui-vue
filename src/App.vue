@@ -20,6 +20,7 @@
 <script>
 
 import {mapActions, mapState} from "vuex";
+import {getData} from "@/api/TestApi";
 
 export default {
   // 定义组件的名称
@@ -48,7 +49,15 @@ export default {
   // 定义观察器
   watch: {},
   // 组件挂载完成时执行
-  mounted() {},
+  mounted() {
+    getData({
+      userName:"test",
+      password:"123456"
+    })
+    .then(res=>{
+      console.log('请求成功',res)
+    })
+  },
   // 组件创建完成时执行
   created() {}
 }
